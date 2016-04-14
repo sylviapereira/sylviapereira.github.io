@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Play Tic Tac Toe</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-	</head>
-	<body>
-		<div id="container">
-			<header>
-				<h1>Tic Tac Toe</h1>
-			</header>
-			<ul id="board">
-				<li id="spot1">+</li>
-				<li id="spot2">+</li>
-				<li id="spot3">+</li>
-				<li id="spot4">+</li>
-				<li id="spot5">+</li>
-				<li id="spot6">+</li>
-				<li id="spot7">+</li>
-				<li id="spot8">+</li>
-				<li id="spot9">+</li>
-			</ul>
-			<div class="clearfix"></div>
-			<footer>
-				<button id="reset">Reset Game</button>
-			</footer>
-		</div>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="ttt.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+</head>
+  <body>
+    <div class="container">
+      <table id="board" cellspacing="0" cellpadding="0">
+        <tr>
+          <td id="cell-1">T</td>
+          <td id="cell-2">I</td>
+          <td id="cell-3">C</td>
+        </tr>
+        <tr>
+          <td id="cell-4">T</td>
+          <td id="cell-5">A</td>
+          <td id="cell-6">C</td>
+        </tr>
+        <tr>
+          <td id="cell-7">T</td>
+          <td id="cell-8">O</td>
+          <td id="cell-9">E</td>
+        </tr>
+      </table>
+
+      <footer>
+        <button id="reset">Start Again</button>
+      </footer>
+    </div>
+  </body>
 </html>
